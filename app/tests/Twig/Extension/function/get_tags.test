@@ -2,10 +2,12 @@
 get_tags function should return a list of tags
 
 --TEMPLATE--
-{{ get_tags(5)|join(', ') }}
+{{ get_tags(tag_count)|join(', ') }}
 
 --DATA--
-return []
+return [
+    'tag_count' => 5,
+]
 
 --EXPECT--
 dogs, cats, pigs, pigeons, monkeys
