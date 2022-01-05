@@ -23,4 +23,4 @@ deps:
 	@docker exec $(CONTAINER) composer install
 
 tests:
-	@docker exec -u $(UID) $(CONTAINER) vendor/bin/phpunit --colors=always --bootstrap vendor/autoload.php tests
+	@docker exec -u $(UID) $(CONTAINER) vendor/bin/phpunit --colors=always --exclude-group=legacy --bootstrap vendor/autoload.php tests
