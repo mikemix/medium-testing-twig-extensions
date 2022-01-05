@@ -32,9 +32,4 @@ final class ArticleTagExtensionTest extends IntegrationTestCase
             },
         ]);
     }
-
-    protected function doIntegrationTest($file, $message, $condition, $templates, $exception, $outputs, $deprecation = '')
-    {
-        $this->expectNotToPerformAssertions();
-    }
 }
