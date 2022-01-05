@@ -1,0 +1,11 @@
+--TEST--
+get_tags function should return a list of tags
+
+--TEMPLATE--
+{{ get_tags(5)|join(', ') }}
+
+--DATA--
+return []
+
+--EXPECT--
+dogs, cats, pigs, pigeons, monkeys
